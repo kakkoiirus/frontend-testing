@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Ivan Ivanov",
+    "favorite_content_id": [ 1, 2, 5 ]
+  },
+  {
+    "name": "Petr Petrov",
+    "favorite_content_id": [ 2, 4, 6 ]
+  },
+  {
+    "name": "Sidr Sidorov",
+    "favorite_content_id": [ 2, 4, 8, 5, 1]
+  },
+  {
+    "name": "Darth Vader",
+    "favorite_content_id": [ 2, 3, 4 ]
+  },
+  {
+    "name": "Mireille Harber",
+    "favorite_content_id": [ 5, 6, 7 ]
+  },
+  {
+    "name": "Ryley Moore",
+    "favorite_content_id": [ 2 ]
+  },
+  {
+    "name": "Nedra Haag",
+    "favorite_content_id": [ 5, 6 ]
+  },
+  {
+    "name": "Remington Lueilwktz",
+    "favorite_content_id": []
+  },
+  {
+    "name": "Ms. Marlin Zulauf",
+    "favorite_content_id": [ 1, 2, 3, 4, 5, 6 ]
+  }
+]
