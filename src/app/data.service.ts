@@ -13,7 +13,7 @@ export class DataService {
 
   private usersUrl = 'https://reqres.in/api/users';
 
-  private getFavoriteChannels(user: any, content: any, tvChannels: any) {
+  private getFavoriteChannels(user: any, content: any, tvChannels: any): any[] {
     const favoriteContentIdList = user.favorite_content_id;
 
     const favoriteChannelsCounter = favoriteContentIdList.reduce((acc: any, id: number) => {
@@ -69,22 +69,22 @@ export class DataService {
                 .map((channel) => channel.name)
                 .join(', ');
 
-              return { ...user, favoriteChannel }
+              return { ...user, favoriteChannel };
             });
         return { users: preparedUsers, content, tvChannels };
-      }))
+      }));
   }
 
   addUser(user: any, content: any, tvChannels: any): Observable<any> {
     return this.httpClient.post<any>(this.usersUrl, user)
       .pipe(
-        map((user) => {
-          const favoriteChannel = this.getFavoriteChannels(user, content, tvChannels)
+        map((newUser: any) => {
+          const favoriteChannel = this.getFavoriteChannels(newUser, content, tvChannels)
             .map((channel) => channel.name)
             .join(', ');
-            
-          return { ...user, favoriteChannel }
+
+          return { ...newUser, favoriteChannel };
         })
-      )
+      );
   }
 }

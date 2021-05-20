@@ -15,10 +15,10 @@ export class AppComponent implements OnInit {
     private dataDervice: DataService
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.dataDervice.getData().subscribe((data) => {
       this.data = data;
-    })
+    });
 
     // this.httpClient.post('https://reqres.in/api/users', { name: 'Ivan', favorite_content_id: [ 1, 2, 3] }).subscribe((data) => {
     //   console.log(data);
