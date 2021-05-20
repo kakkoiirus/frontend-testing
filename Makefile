@@ -1,5 +1,5 @@
 install:
 	npm ci
 
-start:
-	npm start
+serve:
+	npm serve
