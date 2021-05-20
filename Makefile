@@ -2,4 +2,4 @@ install:
 	npm ci
 
 serve:
-	npm serve
+	npm run serve
