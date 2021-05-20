@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./user-table.component.scss']
 })
 export class UserTableComponent implements OnInit {
-  @Input() users: any;
+  @Input() data: any;
   constructor() { }
 
   ngOnInit(): void {
